@@ -45,7 +45,7 @@
             "style": "agnoster_short"
           },
           "style": "plain",
-          "template": " {{ .Path }} {{ if .Env.VIRTUAL_ENV_PROMPT }} ❄ {{end}}",
+          "template": " {{ .Path }} {{ if .Env.VIRTUAL_ENV }} ❄ {{end}}",
           "type": "path"
         },
         {
