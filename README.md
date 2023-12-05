@@ -1,0 +1,5 @@
+# Customization of different apps and envs
+
+## OhMyPosh
+
+joe_omp.json -> version 0.7
