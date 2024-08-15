@@ -2,4 +2,10 @@
 
 ## OhMyPosh
 
-joe_omp.json -> version 0.7
+joe_omp.json -> version 0.8
+
+## Nvim
+
+New Nvim config
+
+

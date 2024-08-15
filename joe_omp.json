@@ -5,13 +5,6 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#000000",
-          "foreground": "#dd1e1e",
-          "style": "plain",
-          "template": " \u26a1",
-          "type": "root"
-        },
-        {
           "foreground": "#B4BEFE",
           "properties": {
             "alpine": "\uf300",
@@ -32,7 +25,7 @@
             "wsl": "\ue712"
           },
           "style": "plain",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} <#45475A>\ue0ca</>",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} <#45475A>\ueee6 \ue0b2</>",
           "type": "os"
         },
         {
@@ -67,8 +60,8 @@
             "threshold": 0
           },
           "style": "diamond",
-          "template": "<#45475A>\ue0b0</>{{ .FormattedMs }}s",
-          "trailing_diamond": "\ue0c8",
+          "template": "<#45475A>\ue0b0</>{{ .FormattedMs }}s ",
+          "trailing_diamond": "\ue0b0",
           "type": "executiontime"
         }
       ],
@@ -109,8 +102,14 @@
             "always_enabled": true
           },
           "style": "plain",
-          "template": " \uf432 ",
+          "template": " \uef12 ",
           "type": "status"
+        },
+        {
+          "foreground": "#dd1e1e",
+          "style": "plain",
+          "template": " \u26a1",
+          "type": "root"
         }
       ],
       "type": "prompt"
