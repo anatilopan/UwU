@@ -1,0 +1,25 @@
+[user]
+	email = robertstan@aphios.ro
+	name = RS
+[core]
+	editor = nano
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true   # first push of a new branch sets the upstream
+[pull]
+	rebase = true            # rebase local commits on top instead of merge commits
+[rebase]
+	autoStash = true         # stash/unstash uncommitted changes around a rebase
+[fetch]
+	prune = true             # drop remote branches that were deleted upstream
+[rerere]
+	enabled = true           # remember conflict resolutions and reuse them
+[diff]
+	colorMoved = default     # moved lines in a different colour
+[alias]
+	st = status -sb
+	lg = log --graph --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %C(green)(%cr) %C(blue)<%an>%Creset'
+# Machine-specific overrides (not in the repo)
+[include]
+	path = ~/.gitconfig.local

@@ -1,0 +1,11 @@
+# Keep the system defaults (Home/End, Page Up/Down history search, ...)
+$include /etc/inputrc
+
+# Tab completion
+set completion-ignore-case on        # cd doc<Tab> -> Documents/
+set completion-map-case on           # treat - and _ as the same
+set show-all-if-ambiguous on         # list matches on the first Tab
+set colored-stats on                 # colour matches like ls
+set colored-completion-prefix on     # highlight the part already typed
+set mark-symlinked-directories on    # add / after symlinked dirs
+set visible-stats on                 # mark types: / dirs, * executables, @ links

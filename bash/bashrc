@@ -48,6 +48,6 @@ if [[ $- == *i* ]]; then
     done
     [[ -f "$HOME/.cargo/env" ]] || missing+=("cargo")
     [[ -f "$HOME/.bashrc.d/aliases.sh" ]] || missing+=("~/.bashrc.d/aliases.sh")
-    (( ${#missing[@]} )) && echo "⚠ bashrc: missing ${missing[*]} (see UwU/README.md)"
+    (( ${#missing[@]} )) && echo "⚠ bashrc: missing ${missing[*]} (run UwU/install.sh)"
     unset missing tool
 fi
