@@ -39,3 +39,15 @@ fi
 if command -v zoxide &>/dev/null; then
     eval "$(zoxide init bash)"
 fi
+
+# 7. Startup reminder for tools or files this config expects but can't find
+if [[ $- == *i* ]]; then
+    missing=()
+    for tool in pyenv oh-my-posh zoxide fzf bat; do
+        command -v "$tool" &>/dev/null || missing+=("$tool")
+    done
+    [[ -f "$HOME/.cargo/env" ]] || missing+=("cargo")
+    [[ -f "$HOME/.bashrc.d/aliases.sh" ]] || missing+=("~/.bashrc.d/aliases.sh")
+    (( ${#missing[@]} )) && echo "⚠ bashrc: missing ${missing[*]} (see UwU/README.md)"
+    unset missing tool
+fi

@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- `bashrc`: startup warning listing missing tools (pyenv, oh-my-posh, zoxide, fzf, bat, cargo) and a missing `aliases.sh`;
 - `bash/bashrc` and `bash/bashrc.d/`: Bash configuration, symlinked to `~/.bashrc` and `~/.bashrc.d`;
 - `bashrc`: zoxide initialised after the prompt so its hook is not overwritten;
 - `bashrc.d/functions.sh`: `beep` (count and delay in any order), `mkcd`, `extract`;
