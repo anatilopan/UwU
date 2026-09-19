@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- `joe_omp.json`: migrated to oh-my-posh config format version 3 (key order, `cache_duration` per segment); prompt unchanged;
 - `bashrc`: pyenv and cargo only initialised when installed, oh-my-posh config path uses `$HOME`, so the config loads on machines without them;
 - `bashrc.d/functions.sh`: `reload` moved here from `aliases.sh`
 
